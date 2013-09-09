@@ -47,6 +47,7 @@
     <Compile Include="ContinuousFuzzySetBLL.cs" />
     <Compile Include="DiscreteFuzzySetBLL.cs" />
     <Compile Include="FuzzySetBLL.cs" />
+    <Compile Include="FzAttributeBLL.cs" />
     <Compile Include="FzDataTypeBLL.cs" />
     <Compile Include="FzDbBLL.cs" />
     <Compile Include="FzQueryBLL.cs" />
