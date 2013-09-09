@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FRDB-SQLite", "FRDB-SQLite\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer", "..\BusinessLayer\BusinessLayer\BusinessLayer.csproj", "{E66669C2-BDEB-4F47-8093-245BBA1C9F47}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLayer", "..\DataLayer\DataLayer\DataLayer.csproj", "{1FFD95DA-67D5-4A27-BD8F-D663D3F4D056}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -39,6 +41,16 @@ Global
 		{E66669C2-BDEB-4F47-8093-245BBA1C9F47}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{E66669C2-BDEB-4F47-8093-245BBA1C9F47}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{E66669C2-BDEB-4F47-8093-245BBA1C9F47}.Release|x86.ActiveCfg = Release|Any CPU
+		{1FFD95DA-67D5-4A27-BD8F-D663D3F4D056}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FFD95DA-67D5-4A27-BD8F-D663D3F4D056}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FFD95DA-67D5-4A27-BD8F-D663D3F4D056}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{1FFD95DA-67D5-4A27-BD8F-D663D3F4D056}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{1FFD95DA-67D5-4A27-BD8F-D663D3F4D056}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1FFD95DA-67D5-4A27-BD8F-D663D3F4D056}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FFD95DA-67D5-4A27-BD8F-D663D3F4D056}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FFD95DA-67D5-4A27-BD8F-D663D3F4D056}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{1FFD95DA-67D5-4A27-BD8F-D663D3F4D056}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{1FFD95DA-67D5-4A27-BD8F-D663D3F4D056}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
