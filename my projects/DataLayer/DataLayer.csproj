@@ -37,6 +37,9 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,12 +49,22 @@
   <ItemGroup>
     <Compile Include="ContinuousFuzzySetDAL.cs" />
     <Compile Include="FzDbDAL.cs" />
+    <Compile Include="Library\FuzzySetLibrary.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FuzzySetLibrary.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Library\System.Data.SQLite.dll" />
   </ItemGroup>
   <ItemGroup>
+    <EntityDeploy Include="Library\FuzzySetLibrary.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>FuzzySetLibrary.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="App.Config" />
     <None Include="Library\FuzzySetLibrary.s3db" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
