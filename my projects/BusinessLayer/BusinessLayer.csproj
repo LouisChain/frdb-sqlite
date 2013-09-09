@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FzDbBLL.cs" />
+    <Compile Include="FzQueryBLL.cs" />
     <Compile Include="FzRelationBLL.cs" />
     <Compile Include="FzSchemeBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
