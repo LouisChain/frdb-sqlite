@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FzDataTypeBLL.cs" />
     <Compile Include="FzDbBLL.cs" />
     <Compile Include="FzQueryBLL.cs" />
     <Compile Include="FzRelationBLL.cs" />
