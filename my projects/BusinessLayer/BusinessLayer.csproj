@@ -50,6 +50,7 @@
     <Compile Include="FzRelationBLL.cs" />
     <Compile Include="FzSchemeBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryConditionBLL.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
