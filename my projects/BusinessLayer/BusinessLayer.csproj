@@ -53,6 +53,7 @@
     <Compile Include="FzQueryBLL.cs" />
     <Compile Include="FzRelationBLL.cs" />
     <Compile Include="FzSchemeBLL.cs" />
+    <Compile Include="FzTupleBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QueryConditionBLL.cs" />
     <Compile Include="QueryExcutetionBLL.cs" />
