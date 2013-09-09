@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ContinuousFuzzySetDAL.cs" />
+    <Compile Include="FuzzySetDAL.cs" />
     <Compile Include="FzDbDAL.cs" />
     <Compile Include="Library\FuzzySetLibrary.Designer.cs">
       <AutoGen>True</AutoGen>
