@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="FzDbBLL.cs" />
     <Compile Include="FzRelationBLL.cs" />
+    <Compile Include="FzSchemeBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
