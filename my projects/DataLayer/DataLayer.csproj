@@ -71,6 +71,12 @@
     <None Include="App.Config" />
     <None Include="Library\FuzzySetLibrary.s3db" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\BusinessLayer\BusinessLayer\BusinessLayer.csproj">
+      <Project>{E66669C2-BDEB-4F47-8093-245BBA1C9F47}</Project>
+      <Name>BusinessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
