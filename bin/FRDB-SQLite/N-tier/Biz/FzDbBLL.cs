@@ -116,8 +116,46 @@ namespace N_tier
 
         #endregion
 
-        #region 4. Methods (None)
-        
+        #region 4. Methods  
+        public static String GetRootPath(String path)
+        {
+            return FzDbDAL.GetRootPath(path);
+        }
+
+        public  Boolean CheckConnection()
+        {
+            return new FzDbDAL().CheckConnection(this);
+        }
+
+        public bool CreateBlankDatabaseTbb()
+        {
+            return new FzDbDAL().CreateBlankFdb(this);
+        }
+
+        public bool CreateFuzzyDatabase()
+        {
+            return new FzDbDAL().CreateFuzzyDatabase(this);
+        }
+
+        public bool OpenFuzzyDatabase()
+        {
+            return new FzDbDAL().OpenFuzzyDatabase(this);
+        }
+
+        public void DropFuzzyDatabase()
+        {
+            new FzDbDAL().DropFuzzyDatabase(this);
+        }
+
+        public bool SaveFuzzyDatabaseAs()
+        {
+            return new FzDbDAL().SaveFuzzyDatabaseAs(this);
+        }
+
+        public bool SaveFuzzyDatabase()
+        {
+            return new FzDbDAL().SaveFuzzyDatabase(this);
+        }
         #endregion
 
         #region 5. Privates
