@@ -54,7 +54,15 @@ namespace N_tier
 
         #region 4. Methods
 
+        public static List<String> ListOfQueryName(FzDbBLL fdb)
+        {
+            return FzQueryDAL.ListOfQueryName(fdb);
+        }
 
+        public static FzQueryBLL GetQueryByName(String queryName, FzDbBLL fdb)
+        {
+            return FzQueryDAL.GetQueryByName(queryName, fdb);
+        }
        
         #endregion
 
