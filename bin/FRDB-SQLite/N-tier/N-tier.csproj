@@ -46,6 +46,7 @@
   <ItemGroup>
     <Folder Include="Biz\" />
     <Folder Include="Dal\" />
+    <Folder Include="Library\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
