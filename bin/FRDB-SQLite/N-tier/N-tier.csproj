@@ -48,17 +48,36 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Biz\ContinuousFuzzySetBLL.cs" />
+    <Compile Include="Biz\DiscreteFuzzySetBLL.cs" />
+    <Compile Include="Biz\FuzzySetBLL.cs" />
+    <Compile Include="Biz\FzAttributeBLL.cs" />
+    <Compile Include="Biz\FzDataTypeBLL.cs" />
+    <Compile Include="Biz\FzDbBLL.cs" />
+    <Compile Include="Biz\FzQueryBLL.cs" />
+    <Compile Include="Biz\FzRelationBLL.cs" />
+    <Compile Include="Biz\FzSchemeBLL.cs" />
+    <Compile Include="Biz\FzTupleBLL.cs" />
+    <Compile Include="Dal\ContinuousFuzzySetDAL.cs" />
+    <Compile Include="Dal\FuzzySetDAL.cs" />
+    <Compile Include="Dal\FzDbDAL.cs" />
+    <Compile Include="Dal\DiscreteFuzzySetDAL.cs" />
+    <Compile Include="Dal\FzDataTypeDAL.cs" />
+    <Compile Include="Dal\FzQueryDAL.cs" />
+    <Compile Include="Dal\FzRelationDAL.cs" />
+    <Compile Include="Dal\FzSchemeDAL.cs" />
     <Compile Include="Library\FuzzySetLibrary.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>FuzzySetLibrary.edmx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Biz\QueryConditionBLL.cs" />
+    <Compile Include="Biz\QueryExcutetionBLL.cs" />
+    <Compile Include="Biz\ThreadBLL.cs" />
+    <Compile Include="Dal\SqliteConnection.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Biz\" />
-    <Folder Include="Dal\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <EntityDeploy Include="Library\FuzzySetLibrary.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
