@@ -54,7 +54,42 @@ namespace N_tier
 
         #region 4. Methods
 
+        public static Boolean IsInherited(FzSchemeBLL scheme, List<FzRelationBLL> relations)
+        {
+            if (scheme.Attributes.Count > 0)
+            {
+                return FzSchemeDAL.IsInherited(scheme, relations);
+            }
+            return false;
+        }
 
+        public static Boolean IsInherited(FzDbBLL fdb)
+        {
+            return FzSchemeDAL.IsInherited(fdb);
+        }
+
+        public static FzSchemeBLL GetSchemeByName(String name, FzDbBLL fdb)
+        {
+            return FzSchemeDAL.GetSchemeByName(name, fdb);
+        }
+
+        public static List<String> GetListSchemeName(FzDbBLL fdb)
+        {
+            return FzSchemeDAL.GetListSchemeName(fdb);
+        }
+
+        public static void RenameScheme(String oldName, String newName, FzDbBLL fdb)
+        {
+            if (fdb.Schemes.Count > 0)
+            {
+                FzSchemeDAL.RenameScheme(oldName, newName, fdb);
+            }
+        }
+
+        public static Boolean DeleteAllSchems(FzDbBLL fdb)
+        {
+            return FzSchemeDAL.DeleteAllSchemes(fdb);
+        }
        
         #endregion
 
