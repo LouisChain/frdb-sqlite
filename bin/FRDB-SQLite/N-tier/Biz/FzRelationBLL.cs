@@ -79,8 +79,16 @@ namespace N_tier
         }
         #endregion
 
-        #region 4. Methods (none)
+        #region 4. Methods 
+        public static List<String> GetListRelationName(FzDbBLL fdb)
+        {
+            return FzRelationDAL.GetListRelationName(fdb);
+        }
 
+        public static FzRelationBLL GetRelationByName(String relationName, FzDbBLL fdb)
+        {
+            return FzRelationDAL.GetRelationByName(relationName, fdb);
+        }
         #endregion
 
         #region 5. Privates (none)
