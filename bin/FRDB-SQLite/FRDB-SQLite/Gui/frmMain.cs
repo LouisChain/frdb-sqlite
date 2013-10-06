@@ -2774,22 +2774,12 @@ namespace FRDB_SQLite.Gui
         private void barButtonItem13_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             (new frmAbout(false)).Show(); 
-            
         }
 
         private void iHelp_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            try
-            {
-                Process.Start("Huong dan cai dat va su dung.doc");
-                frmHelp frm = new frmHelp();
-                frm.ShowDialog();
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show("Your PC is missing word document reader");
-            }
-           
+            frmHelp frm = new frmHelp();
+            frm.ShowDialog();
         }
         #endregion
 

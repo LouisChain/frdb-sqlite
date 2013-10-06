@@ -342,7 +342,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="App.Config" />
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
     <EntityDeploy Include="FuzzySetLibrary.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>FuzzySetLibrary.Designer.cs</LastGenOutput>

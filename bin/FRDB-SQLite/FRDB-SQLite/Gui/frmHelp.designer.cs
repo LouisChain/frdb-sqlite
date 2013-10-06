@@ -33,6 +33,7 @@
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.logoPictureBox = new System.Windows.Forms.PictureBox();
             this.btnOK = new DevExpress.XtraEditors.SimpleButton();
+            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -88,11 +89,23 @@
             this.btnOK.Text = "OK";
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
+            // linkLabel3
+            // 
+            this.linkLabel3.AutoSize = true;
+            this.linkLabel3.Location = new System.Drawing.Point(175, 124);
+            this.linkLabel3.Name = "linkLabel3";
+            this.linkLabel3.Size = new System.Drawing.Size(96, 13);
+            this.linkLabel3.TabIndex = 15;
+            this.linkLabel3.TabStop = true;
+            this.linkLabel3.Text = "Read the guideline";
+            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
+            // 
             // frmHelp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(437, 166);
+            this.ClientSize = new System.Drawing.Size(435, 162);
+            this.Controls.Add(this.linkLabel3);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.logoPictureBox);
             this.Controls.Add(this.label1);
@@ -116,5 +129,6 @@
         private System.Windows.Forms.LinkLabel linkLabel2;
         private System.Windows.Forms.PictureBox logoPictureBox;
         private DevExpress.XtraEditors.SimpleButton btnOK;
+        private System.Windows.Forms.LinkLabel linkLabel3;
     }
 }

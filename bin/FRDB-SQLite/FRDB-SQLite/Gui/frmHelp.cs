@@ -33,5 +33,17 @@ namespace FRDB_SQLite.Gui
         {
             this.Close();
         }
+
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            try
+            {
+                Process.Start("Huong dan cai dat va su dung.doc");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Your PC is missing word document reader");
+            }
+        }
     }
 }
