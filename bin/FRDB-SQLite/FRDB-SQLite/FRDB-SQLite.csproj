@@ -171,12 +171,6 @@
     <Content Include="Images\trapozium.png" />
     <Content Include="Images\Trash_16x16.png" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\SyntaxHighlighter\SyntaxHighlighter.csproj">
-      <Project>{FEE592E8-1EA4-4E5B-A432-81F7768BC1CA}</Project>
-      <Name>SyntaxHighlighter</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
