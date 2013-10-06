@@ -204,6 +204,12 @@
     <Compile Include="Gui\frmListContinuous.designer.cs">
       <DependentUpon>frmListContinuous.cs</DependentUpon>
     </Compile>
+    <Compile Include="Gui\frmListDescrete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\frmListDescrete.designer.cs">
+      <DependentUpon>frmListDescrete.cs</DependentUpon>
+    </Compile>
     <Compile Include="Gui\frmNewName.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -282,6 +288,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Gui\frmListContinuous.resx">
       <DependentUpon>frmListContinuous.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\frmListDescrete.resx">
+      <DependentUpon>frmListDescrete.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Gui\frmNewName.resx">
       <DependentUpon>frmNewName.cs</DependentUpon>
