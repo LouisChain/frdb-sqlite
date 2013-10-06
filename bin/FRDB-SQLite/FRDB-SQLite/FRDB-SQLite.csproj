@@ -82,6 +82,7 @@
     <Reference Include="System.Core">
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Data.SQLite, Version=1.0.66.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Libs\System.Data.SQLite.dll</HintPath>
@@ -156,6 +157,11 @@
     <Compile Include="Entity\FzRelationEntity.cs" />
     <Compile Include="Entity\FzSchemeEntity.cs" />
     <Compile Include="Entity\FzTupleEntity.cs" />
+    <Compile Include="FuzzySetLibrary.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FuzzySetLibrary.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Gui\frmAbout.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -311,6 +317,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EntityDeploy Include="FuzzySetLibrary.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>FuzzySetLibrary.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="App.Config" />
     <None Include="Libs\FuzzySetLibrary.s3db" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
