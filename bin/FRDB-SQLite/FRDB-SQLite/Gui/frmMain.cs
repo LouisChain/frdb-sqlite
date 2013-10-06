@@ -2781,9 +2781,9 @@ namespace FRDB_SQLite.Gui
         {
             try
             {
+                Process.Start("Huong dan cai dat va su dung.doc");
                 frmHelp frm = new frmHelp();
                 frm.ShowDialog();
-                Process.Start("Huong dan cai dat va su dung.doc");
             }
             catch(Exception ex)
             {
