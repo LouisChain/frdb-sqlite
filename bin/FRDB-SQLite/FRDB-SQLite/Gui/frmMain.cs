@@ -119,7 +119,13 @@ namespace FRDB_SQLite.Gui
             }
             catch (Exception ex)
             {
-                MessageBox.Show("ERROR:\n" + ex.Message);
+                DialogResult result = MessageBox.Show("You haven't installed SQLite yet, do you want to install SQLite right now?", "SQLite"
+                    + fdbEntity.FdbName, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (result == DialogResult.Yes)
+                {
+                    Process.Start("SQLite-1.0.66.0-setup.exe");
+                }
             }
         }
 
@@ -186,7 +192,13 @@ namespace FRDB_SQLite.Gui
             }
             catch (Exception ex)
             {
-                MessageBox.Show("ERROR\n" + ex.Message);
+                DialogResult result = MessageBox.Show("You haven't installed SQLite yet, do you want to install SQLite right now?", "SQLite"
+                   + fdbEntity.FdbName, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (result == DialogResult.Yes)
+                {
+                    Process.Start("SQLite-1.0.66.0-setup.exe");
+                }
             }
         }
 
