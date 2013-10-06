@@ -198,6 +198,30 @@
     <Compile Include="Gui\frmListContinuous.designer.cs">
       <DependentUpon>frmListContinuous.cs</DependentUpon>
     </Compile>
+    <Compile Include="Gui\frmNewName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\frmNewName.designer.cs">
+      <DependentUpon>frmNewName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\frmProgressBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\frmProgressBar.designer.cs">
+      <DependentUpon>frmProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\frmQueryEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\frmQueryEditor.designer.cs">
+      <DependentUpon>frmQueryEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\frmRelationEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\frmRelationEditor.designer.cs">
+      <DependentUpon>frmRelationEditor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Gui\frmRunAsAdministrator.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -211,6 +235,18 @@
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Biz\OldAlgorithm.cs" />
+    <Compile Include="Gui\frmSaveScheme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\frmSaveScheme.designer.cs">
+      <DependentUpon>frmSaveScheme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\frmSchemeEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\frmSchemeEditor.designer.cs">
+      <DependentUpon>frmSchemeEditor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Biz\QueryConditionBLL.cs" />
@@ -241,11 +277,29 @@
     <EmbeddedResource Include="Gui\frmListContinuous.resx">
       <DependentUpon>frmListContinuous.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Gui\frmNewName.resx">
+      <DependentUpon>frmNewName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\frmProgressBar.resx">
+      <DependentUpon>frmProgressBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\frmQueryEditor.resx">
+      <DependentUpon>frmQueryEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\frmRelationEditor.resx">
+      <DependentUpon>frmRelationEditor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Gui\frmRunAsAdministrator.resx">
       <DependentUpon>frmRunAsAdministrator.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Gui\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\frmSaveScheme.resx">
+      <DependentUpon>frmSaveScheme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\frmSchemeEditor.resx">
+      <DependentUpon>frmSchemeEditor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
