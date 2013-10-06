@@ -87,8 +87,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Biz\" />
     <Folder Include="Class\" />
+    <Folder Include="Dal\" />
+    <Folder Include="Data\" />
+    <Folder Include="Entity\" />
     <Folder Include="Gui\" />
+    <Folder Include="Libs\" />
+    <Folder Include="SyntaxHighlighter\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\Calendar_16x16.png" />
