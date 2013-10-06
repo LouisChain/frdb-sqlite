@@ -347,11 +347,28 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>FuzzySetLibrary.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="Data\about_100km.conFS" />
+    <None Include="Data\about_10h.conFS" />
+    <None Include="Data\about_10kg.conFS" />
+    <None Include="Data\about_10km.conFS" />
+    <None Include="Data\about_1thang.conFS" />
+    <None Include="Data\about_2kg.conFS" />
+    <None Include="Data\about_36h.conFS" />
+    <None Include="Data\cheap_price.conFS" />
     <None Include="Data\Example.tbb" />
     <None Include="Data\FuzzySetLibrary.s3db" />
+    <None Include="Data\heavy.disFS" />
     <None Include="Data\Hospital.tbb" />
     <None Include="Data\lib.rar" />
+    <None Include="Data\middle.conFS" />
+    <None Include="Data\middle.disFS" />
+    <None Include="Data\new fs.disFS" />
+    <None Include="Data\old.conFS" />
+    <None Include="Data\old.disFS" />
     <None Include="Data\Postal.tbb" />
+    <None Include="Data\tall.disFS" />
+    <None Include="Data\young.conFS" />
+    <None Include="Data\young.disFS" />
     <None Include="Libs\FuzzySetLibrary.s3db" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -366,6 +383,7 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Data\license.txt" />
+    <Content Include="Data\UserGuide.txt" />
     <Content Include="Images\back-alt-16.png" />
     <Content Include="Images\Calendar_16x16.png" />
     <Content Include="Images\chart_bar.png" />
