@@ -200,6 +200,7 @@
     <Folder Include="Data\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\back-alt-16.png" />
     <Content Include="Images\Calendar_16x16.png" />
     <Content Include="Images\chart_bar.png" />
     <Content Include="Images\close.png" />
@@ -210,6 +211,7 @@
     <Content Include="Images\database_refresh.png" />
     <Content Include="Images\database_save.png" />
     <Content Include="Images\delete_query.png" />
+    <Content Include="Images\deny.png" />
     <Content Include="Images\discrete.png" />
     <Content Include="Images\Drafts_16x16.png" />
     <Content Include="Images\execute result.png" />
@@ -218,6 +220,8 @@
     <Content Include="Images\flow_chart-32.png" />
     <Content Include="Images\folder_table.png" />
     <Content Include="Images\help-512.png" />
+    <Content Include="Images\icon.ico" />
+    <Content Include="Images\icon.jpg" />
     <Content Include="Images\Inbox_16x16.png" />
     <Content Include="Images\inbox_table.png" />
     <Content Include="Images\Line-Chart-Up-32.png" />
