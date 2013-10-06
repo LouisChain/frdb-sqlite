@@ -147,7 +147,7 @@ namespace FRDB_SQLite.Gui
             {
                 RefreshData();
 
-                MessageBox.Show("Delect selected DONE!");
+                MessageBox.Show("Delete selected DONE!");
             }
             else
             {

@@ -57,7 +57,7 @@ namespace FRDB_SQLite.Gui
                 //}
                 RefreshData1();
 
-                MessageBox.Show("Delect selected DONE!");
+                MessageBox.Show("Delete selected DONE!");
             }
             else
             {
