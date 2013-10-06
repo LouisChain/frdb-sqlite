@@ -359,6 +359,7 @@
     <None Include="Data\FuzzySetLibrary.s3db" />
     <None Include="Data\heavy.disFS" />
     <None Include="Data\Hospital.tbb" />
+    <None Include="Data\Huong dan cai dat va su dung.doc" />
     <None Include="Data\lib.rar" />
     <None Include="Data\middle.conFS" />
     <None Include="Data\middle.disFS" />

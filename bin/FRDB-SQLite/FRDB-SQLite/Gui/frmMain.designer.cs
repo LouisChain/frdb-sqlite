@@ -72,7 +72,7 @@
             this.Btn_Data_UpdateData = new System.Windows.Forms.ToolStripButton();
             this.GridViewData = new System.Windows.Forms.DataGridView();
             this.tabQuery = new DevExpress.XtraTab.XtraTabPage();
-            this.txtQuery = new SyntaxRichTextBox();
+            this.txtQuery = new FRDB_SQLite.SyntaxRichTextBox();
             this.xtraTabQueryResult = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabResult = new DevExpress.XtraTab.XtraTabPage();
             this.GridViewResult = new System.Windows.Forms.DataGridView();
@@ -837,7 +837,7 @@
             this.iOperator});
             this.ribbonControl.LargeImages = this.ribbonImageCollectionLarge;
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl.MaxItemId = 114;
+            this.ribbonControl.MaxItemId = 115;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.homeRibbonPage,

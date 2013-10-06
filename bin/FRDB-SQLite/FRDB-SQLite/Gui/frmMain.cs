@@ -2779,8 +2779,16 @@ namespace FRDB_SQLite.Gui
 
         private void iHelp_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            frmHelp frm = new frmHelp();
-            frm.ShowDialog();
+            try
+            {
+                frmHelp frm = new frmHelp();
+                frm.ShowDialog();
+                Process.Start("Huong dan cai dat va su dung.doc");
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Your PC is missing word document reader");
+            }
            
         }
         #endregion
