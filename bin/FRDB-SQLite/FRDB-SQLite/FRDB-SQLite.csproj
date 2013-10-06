@@ -156,7 +156,51 @@
     <Compile Include="Entity\FzRelationEntity.cs" />
     <Compile Include="Entity\FzSchemeEntity.cs" />
     <Compile Include="Entity\FzTupleEntity.cs" />
-    <Compile Include="Gui\frmRunAsAdministrator.cs" />
+    <Compile Include="Gui\frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\frmAbout.designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\frmContinuousEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\frmContinuousEditor.designer.cs">
+      <DependentUpon>frmContinuousEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\frmDataType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\frmDataType.designer.cs">
+      <DependentUpon>frmDataType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\frmDescreteEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\frmDescreteEditor.designer.cs">
+      <DependentUpon>frmDescreteEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\frmFuzzySetAction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\frmFuzzySetAction.designer.cs">
+      <DependentUpon>frmFuzzySetAction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\frmHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\frmHelp.designer.cs">
+      <DependentUpon>frmHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\frmListContinuous.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\frmListContinuous.designer.cs">
+      <DependentUpon>frmListContinuous.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\frmRunAsAdministrator.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Gui\frmRunAsAdministrator.designer.cs">
       <DependentUpon>frmRunAsAdministrator.cs</DependentUpon>
     </Compile>
@@ -176,6 +220,27 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Biz\ThreadBLL.cs" />
+    <EmbeddedResource Include="Gui\frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\frmContinuousEditor.resx">
+      <DependentUpon>frmContinuousEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\frmDataType.resx">
+      <DependentUpon>frmDataType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\frmDescreteEditor.resx">
+      <DependentUpon>frmDescreteEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\frmFuzzySetAction.resx">
+      <DependentUpon>frmFuzzySetAction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\frmHelp.resx">
+      <DependentUpon>frmHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\frmListContinuous.resx">
+      <DependentUpon>frmListContinuous.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Gui\frmRunAsAdministrator.resx">
       <DependentUpon>frmRunAsAdministrator.cs</DependentUpon>
     </EmbeddedResource>
