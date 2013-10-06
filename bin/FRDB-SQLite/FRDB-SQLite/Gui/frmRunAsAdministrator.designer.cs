@@ -43,7 +43,8 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(266, 57);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Access deny !\r\nBecause you haven\'t run application \r\nas \'Administrator\'";
+            this.label1.Text = "You have not permission!\r\nBecause you haven\'t run application \r\nas \'Administrator" +
+    "\'";
             // 
             // label2
             // 
@@ -58,6 +59,9 @@
             // btnDelete
             // 
             this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDelete.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.Appearance.Options.UseFont = true;
+            this.btnDelete.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnDelete.Location = new System.Drawing.Point(12, 120);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(269, 33);
@@ -87,8 +91,10 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmRunAsAdministrator";
+            this.ShowIcon = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.Text = "frmRunAsAdministrator";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Access deny!";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

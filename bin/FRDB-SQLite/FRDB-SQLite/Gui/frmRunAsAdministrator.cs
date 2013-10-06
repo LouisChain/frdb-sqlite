@@ -19,7 +19,7 @@ namespace FRDB_SQLite
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-
+            this.Close();
             Process.Start("UserGuide.txt");
         }
     }
