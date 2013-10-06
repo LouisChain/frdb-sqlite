@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 using FRDB_SQLite;
+using FRDB_SQLite.Gui;
 
 namespace FRDB_SQLite
 {
