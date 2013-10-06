@@ -31,8 +31,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnDelete = new DevExpress.XtraEditors.SimpleButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,15 +70,6 @@
             this.btnDelete.Text = "How to run application as Administrator";
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::FRDB_SQLite.Properties.Resources.deny;
-            this.pictureBox1.Location = new System.Drawing.Point(19, 24);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(39, 31);
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
@@ -89,6 +80,16 @@
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "read the guideline";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::FRDB_SQLite.Properties.Resources.gear_forbidden;
+            this.pictureBox1.Location = new System.Drawing.Point(19, 9);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(52, 56);
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // frmRunAsAdministrator
             // 

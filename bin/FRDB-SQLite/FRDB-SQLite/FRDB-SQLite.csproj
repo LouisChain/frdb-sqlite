@@ -341,6 +341,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="App.Config">
       <SubType>Designer</SubType>
@@ -406,6 +407,7 @@
     <Content Include="Images\flow_chart-32 %281%29.png" />
     <Content Include="Images\flow_chart-32.png" />
     <Content Include="Images\folder_table.png" />
+    <Content Include="Images\gear_forbidden.png" />
     <Content Include="Images\help-512.png" />
     <Content Include="Images\icon.ico" />
     <Content Include="Images\icon.jpg" />

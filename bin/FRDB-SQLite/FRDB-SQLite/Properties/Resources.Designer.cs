@@ -74,6 +74,13 @@ namespace FRDB_SQLite.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap gear_forbidden {
+            get {
+                object obj = ResourceManager.GetObject("gear_forbidden", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap help_512 {
             get {
                 object obj = ResourceManager.GetObject("help-512", resourceCulture);

@@ -34,5 +34,10 @@ namespace FRDB_SQLite
                 MessageBox.Show("Your PC is missing word document reader");
             }
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
