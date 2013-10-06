@@ -254,6 +254,7 @@
     <Content Include="Libs\DevExpress.XtraLayout.v11.1.dll" />
     <Content Include="Libs\DevExpress.XtraNavBar.v11.1.dll" />
     <Content Include="Libs\DevExpress.XtraVerticalGrid.v11.1.dll" />
+    <Content Include="Libs\SQLite-1.0.66.0-setup.exe" />
     <Content Include="Libs\System.Data.SQLite.dll" />
     <Content Include="Libs\System.Data.SQLite.Linq.dll" />
   </ItemGroup>
