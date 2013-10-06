@@ -140,6 +140,15 @@
     <Compile Include="Biz\FzQueryBLL.cs" />
     <Compile Include="Biz\FzRelationBLL.cs" />
     <Compile Include="Biz\FzSchemeBLL.cs" />
+    <Compile Include="Dal\ContinuousFuzzySetDAL.cs" />
+    <Compile Include="Dal\DiscreteFuzzySetDAL.cs" />
+    <Compile Include="Dal\FdbDAL.cs" />
+    <Compile Include="Dal\FuzzyProcess.cs" />
+    <Compile Include="Dal\FuzzySetDAL.cs" />
+    <Compile Include="Dal\FzDataTypeDAL.cs" />
+    <Compile Include="Dal\FzQueryDAL.cs" />
+    <Compile Include="Dal\FzRelationDAL.cs" />
+    <Compile Include="Dal\FzSchemeDAL.cs" />
     <Compile Include="Gui\frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,6 +160,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Biz\QueryConditionBLL.cs" />
     <Compile Include="Biz\QueryExcutetionBLL.cs" />
+    <Compile Include="Dal\SqliteConnection.cs" />
     <Compile Include="SyntaxHighlighter\SyntaxRichTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -180,7 +190,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Dal\" />
     <Folder Include="Data\" />
     <Folder Include="Entity\" />
   </ItemGroup>
