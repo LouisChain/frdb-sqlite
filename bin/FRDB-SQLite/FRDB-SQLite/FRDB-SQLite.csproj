@@ -413,6 +413,7 @@
     <Content Include="Images\save_relation.png" />
     <Content Include="Images\script_record-32.png" />
     <Content Include="Images\script_save.png" />
+    <Content Include="Images\sgu.png" />
     <Content Include="Images\small_add1.png" />
     <Content Include="Images\small_cancel.png" />
     <Content Include="Images\small_database.png" />
