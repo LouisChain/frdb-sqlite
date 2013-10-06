@@ -353,6 +353,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="Data\license.txt" />
     <Content Include="Images\back-alt-16.png" />
     <Content Include="Images\Calendar_16x16.png" />
     <Content Include="Images\chart_bar.png" />
