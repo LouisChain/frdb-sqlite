@@ -331,6 +331,11 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>FuzzySetLibrary.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="Data\Example.tbb" />
+    <None Include="Data\FuzzySetLibrary.s3db" />
+    <None Include="Data\Hospital.tbb" />
+    <None Include="Data\lib.rar" />
+    <None Include="Data\Postal.tbb" />
     <None Include="Libs\FuzzySetLibrary.s3db" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -342,9 +347,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Images\back-alt-16.png" />
     <Content Include="Images\Calendar_16x16.png" />
