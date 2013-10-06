@@ -157,6 +157,11 @@
     <Compile Include="Entity\FzRelationEntity.cs" />
     <Compile Include="Entity\FzSchemeEntity.cs" />
     <Compile Include="Entity\FzTupleEntity.cs" />
+    <Compile Include="FuzzySetLibrary.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FuzzySetLibrary.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Gui\frmAbout.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -313,6 +318,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="App.Config" />
+    <EntityDeploy Include="FuzzySetLibrary.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>FuzzySetLibrary.Designer.cs</LastGenOutput>
+    </EntityDeploy>
     <None Include="Libs\FuzzySetLibrary.s3db" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
