@@ -657,6 +657,19 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.0,Profile=Client"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4 Client Profile (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.0,Profile=Client"
+                    }
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.Windows.Installer.3.1"
+                    {
+                    "Name" = "8:Windows Installer 3.1"
+                    "ProductCode" = "8:Microsoft.Windows.Installer.3.1"
+                    }
+                }
             }
         }
     }
@@ -1739,12 +1752,12 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:FRDB SQLite Management System"
         "ProductCode" = "8:{9875EDE9-F22A-4F91-B382-F066ADBD092E}"
-        "PackageCode" = "8:{86084672-F759-4F97-B41D-12A8ADFC0137}"
+        "PackageCode" = "8:{005CCB69-57C2-4EAF-BD35-2137AD8D94BC}"
         "UpgradeCode" = "8:{92EFCA6A-F320-4997-AF6B-38E887E59B46}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
-        "RemovePreviousVersions" = "11:FALSE"
-        "DetectNewerInstalledVersion" = "11:FALSE"
+        "RemovePreviousVersions" = "11:TRUE"
+        "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
         "ProductVersion" = "8:1.0.0"
         "Manufacturer" = "8:SGU"
