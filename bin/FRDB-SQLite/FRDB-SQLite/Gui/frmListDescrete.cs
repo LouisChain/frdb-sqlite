@@ -302,11 +302,12 @@ namespace FRDB_SQLite.Gui
             tmpDt.Columns.Add(new DataColumn("values"));
             tmpDt.Columns.Add(new DataColumn("memberships"));
 
+            String filterText = txtFill.Text.Trim().ToLower();
             foreach (DataRow row in dt.Rows)
             {
-                if (row[1].ToString().Contains(txtFill.Text.Trim()) ||
-                    row[2].ToString().Contains(txtFill.Text.Trim()) ||
-                    row[3].ToString().Contains(txtFill.Text.Trim()))
+                if (row[1].ToString().ToLower().Contains(filterText) ||
+                    row[2].ToString().ToLower().Contains(filterText) ||
+                    row[3].ToString().ToLower().Contains(filterText))
                 {
                     tmpDt.ImportRow(row);
                 }

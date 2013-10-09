@@ -235,13 +235,14 @@ namespace FRDB_SQLite.Gui
             tmpDt.Columns.Add("topRight", typeof(Double));
             tmpDt.Columns.Add("bottomRight", typeof(Double));
 
+            String filterText = txtFill.Text.Trim().ToLower();
             foreach (DataRow row in dt.Rows)
             {
-                if (row[1].ToString().Contains(txtFill.Text.Trim()) ||
-                    row[2].ToString().Contains(txtFill.Text.Trim()) ||
-                    row[3].ToString().Contains(txtFill.Text.Trim()) ||
-                    row[4].ToString().Contains(txtFill.Text.Trim()) ||
-                    row[5].ToString().Contains(txtFill.Text.Trim()))
+                if (row[1].ToString().ToLower().Contains(filterText) ||
+                    row[2].ToString().ToLower().Contains(filterText) ||
+                    row[3].ToString().ToLower().Contains(filterText) ||
+                    row[4].ToString().ToLower().Contains(filterText) ||
+                    row[5].ToString().ToLower().Contains(filterText))
                 {
                     tmpDt.ImportRow(row);
                 }
