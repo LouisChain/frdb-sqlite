@@ -66,7 +66,7 @@ namespace FRDB_SQLite.Gui
                         this.Close();
                     }
                 }
-                else//rename relation
+                else if (action == 4)//rename relation
                 {
                     if (txtName.Text == null)
                         MessageBox.Show("Please enter a name");
@@ -78,6 +78,11 @@ namespace FRDB_SQLite.Gui
                         this.Close();
                     }
                 }
+                else
+                {
+                    Name = null;
+                    this.Close();
+                }
             }
             catch (Exception Ex)
             {
@@ -87,6 +92,7 @@ namespace FRDB_SQLite.Gui
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
+            Name = null;
             this.Close();
         }
 

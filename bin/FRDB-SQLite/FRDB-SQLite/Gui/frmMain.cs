@@ -950,6 +950,7 @@ namespace FRDB_SQLite.Gui
             {
                 String oldName = childCurrentNode.Text;
                 FzSchemeEntity newScheme = FzSchemeBLL.GetSchemeByName(oldName, fdbEntity);
+                currentScheme = FzSchemeBLL.GetSchemeByName(oldName, fdbEntity);
 
                 if (FzSchemeBLL.IsInherited(newScheme, fdbEntity.Relations))
                 {
@@ -959,7 +960,7 @@ namespace FRDB_SQLite.Gui
                 DBValues.schemesName = FzSchemeBLL.GetListSchemeName(fdbEntity);
                 frmNewName frm = new frmNewName(3);
                 frm.ShowDialog();
-
+                if (frm.Name == null) return;
                 if (currentScheme != null && newScheme.Equals(currentScheme))
                 {
                     if (xtraTabDatabase.TabPages[1].Text.Contains("Create Relation"))
@@ -1402,20 +1403,33 @@ namespace FRDB_SQLite.Gui
             {
                 if (fdbEntity == null) { MessageBox.Show("Current Database is empty!"); return; }
 
-                String relationName = currentRelation.RelationName;
+
+                String relationName = "";
+                if (currentRelation != null)
+                    relationName = currentRelation.RelationName;
+                else
+                    relationName = childCurrentNode.Name;
+
+                //Set currtn relation
+                currentRelation = FzRelationBLL.GetRelationByName(relationName, fdbEntity);
+
                 renamedRelation = FzRelationBLL.GetRelationByName(relationName, fdbEntity);
 
                 DBValues.relationsName = FzRelationBLL.GetListRelationName(fdbEntity);
-                frmNewName frm = new frmNewName();
+                frmNewName frm = new frmNewName(4);
                 frm.ShowDialog();
 
                 renamedRelation.RelationName = frm.Name;
-                if (currentRelation != null && renamedRelation.Equals(currentRelation))
+                if (frm.Name == null) return;
+                if (currentRelation != null)
                 {
-                    if (xtraTabDatabase.TabPages[1].Text.Contains("Create Relation"))
-                        xtraTabDatabase.TabPages[1].Text = "Create Relation " + frm.Name;
-                    else xtraTabDatabase.TabPages[1].Text = "Relation " + frm.Name;
-                    childCurrentNode.Name = childCurrentNode.Text = frm.Name;
+                    if (renamedRelation.Equals(currentRelation))
+                    {
+                        if (xtraTabDatabase.TabPages[1].Text.Contains("Create Relation"))
+                            xtraTabDatabase.TabPages[1].Text = "Create Relation " + frm.Name;
+                        else xtraTabDatabase.TabPages[1].Text = "Relation " + frm.Name;
+                        childCurrentNode.Name = childCurrentNode.Text = frm.Name;
+                    }
                 }
 
             }
@@ -1970,7 +1984,7 @@ namespace FRDB_SQLite.Gui
             }
             catch (Exception ex)
             {
-                MessageBox.Show("ERROR\n" + ex.Message);
+                MessageBox.Show( ex.Message);
             }
         }
 
@@ -1986,7 +2000,7 @@ namespace FRDB_SQLite.Gui
             }
             catch (Exception ex)
             {
-                MessageBox.Show("ERROR\n" + ex.Message);
+                MessageBox.Show(ex.Message);
             }
         }
 
