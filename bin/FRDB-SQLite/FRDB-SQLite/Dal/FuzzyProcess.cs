@@ -306,6 +306,22 @@ namespace FRDB_SQLite
         } 
         #endregion
 
+        public Boolean Exists(string path)
+        {
+            bool result = false;
+            try
+            {
+                if (File.Exists(path))
+                    result = true;
+                
+                return result;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+
         #region Checking Security
         // Adds an ACL entry on the specified file for the specified account. 
         public void AddFileSecurity(string fileName, string account,
