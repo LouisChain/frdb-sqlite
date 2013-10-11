@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using FRDB_SQLite;
+using System.IO;
 
 namespace FRDB_SQLite
 {
@@ -82,6 +83,10 @@ namespace FRDB_SQLite
                 if (this._queryText.Contains("where"))
                 {
                     List<Item> items = FormatCondition(this._conditionText);
+                    //Check fuzzy set and object here
+                    this.ErrorMessage = ExistsFuzzySet(items);
+                    if (ErrorMessage != "") { this.Error = true; return result; }
+
                     QueryConditionBLL condition = new QueryConditionBLL(items, this._selectedRelations);
                     result.Scheme.Attributes = this._selectedAttributes;
                     
@@ -573,6 +578,28 @@ namespace FRDB_SQLite
 
             return condition;
         }
+        #endregion
+
+        #region 6. Check Objects
+        private String ExistsFuzzySet(List<Item> items)
+        {
+            String message = "";
+            FuzzyProcess fp = new FuzzyProcess();
+            String path = Directory.GetCurrentDirectory() + @"\lib\";
+            foreach (var item in items)
+            {
+                if (item.elements[1] == "->" || item.elements[1] == "→")
+                {
+                    if (!fp.Exists(path + item.elements[2] + ".conFS") &&
+                        !fp.Exists(path + item.elements[2] + ".disFS"))
+                    {
+                        return message = "Incorrect fuzzy set: '" + item.elements[2] + "'.";
+                    }
+                }
+            }
+
+            return message;
+        } 
         #endregion
     }
 
