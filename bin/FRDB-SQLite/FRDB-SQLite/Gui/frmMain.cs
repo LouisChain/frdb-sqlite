@@ -462,6 +462,7 @@ namespace FRDB_SQLite.Gui
             catch (Exception ex)
             { return result; }
         }
+
         private void WritePath(String path)
         {
             try
@@ -1646,6 +1647,7 @@ namespace FRDB_SQLite.Gui
             // The type of error
             txtMessage.ForeColor = color;
             txtMessage.Text = message;
+            return;
         }
 
         private void iOperator_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -1671,10 +1673,12 @@ namespace FRDB_SQLite.Gui
                 FdbEntity newFdb = new FdbEntity() { Relations = fdbEntity.Relations, Schemes = fdbEntity.Schemes };
 
                 QueryExcutetionBLL excutetion = new QueryExcutetionBLL(query.ToLower(), newFdb.Relations);
-
-                if (excutetion.Error) throw new Exception(excutetion.ErrorMessage);
-
                 FzRelationEntity result = excutetion.ExecuteQuery();
+                if (excutetion.Error)
+                {
+                    ShowMessage(excutetion.ErrorMessage, Color.Red); return;
+                }
+
                 if (result != null)
                 {
                     foreach (FzAttributeEntity attribute in result.Scheme.Attributes)
