@@ -176,6 +176,8 @@ namespace FRDB_SQLite
 
                 ///Get selected relations which user input
                 this._selectedRelationTexts = GetRelationTexts(this._queryText);
+                _errorMessage = ExistsRelation();
+                if (ErrorMessage != "") { this.Error = true; throw new Exception(_errorMessage); }
 
                 ///Get condition text user input
                 this._conditionText = GetConditionText(this._queryText);
@@ -599,7 +601,27 @@ namespace FRDB_SQLite
             }
 
             return message;
-        } 
+        }
+
+        private String ExistsRelation()
+        {
+            String message = "";
+            int count = 0;
+            foreach (var item in _relationSet)
+            {
+                if (_selectedRelationTexts[0].ToLower() == item.RelationName.ToLower())
+                    count++;
+            }
+            if (count == 0)
+                return message = "Invalid object name attribute: '" + _selectedRelationTexts[0] + "'.";
+
+            return message;
+        }
+
+        //private void ExistsRelation()
+        //{ 
+            
+        //}
         #endregion
     }
 
