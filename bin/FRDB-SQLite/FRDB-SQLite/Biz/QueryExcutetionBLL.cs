@@ -86,6 +86,8 @@ namespace FRDB_SQLite
                     //Check fuzzy set and object here
                     this.ErrorMessage = ExistsFuzzySet(items);
                     if (ErrorMessage != "") { this.Error = true; return result; }
+                    _errorMessage = ExistsAttribute();
+                    if (ErrorMessage != "") { this.Error = true; throw new Exception(_errorMessage); }
 
                     QueryConditionBLL condition = new QueryConditionBLL(items, this._selectedRelations);
                     result.Scheme.Attributes = this._selectedAttributes;
@@ -173,12 +175,12 @@ namespace FRDB_SQLite
             {
                 ///Get selected attribute which user input
                 this._selectedAttributeTexts = GetAttributeTexts(this._queryText);
-
+                
                 ///Get selected relations which user input
                 this._selectedRelationTexts = GetRelationTexts(this._queryText);
                 _errorMessage = ExistsRelation();
                 if (ErrorMessage != "") { this.Error = true; throw new Exception(_errorMessage); }
-
+                
                 ///Get condition text user input
                 this._conditionText = GetConditionText(this._queryText);
 
@@ -622,7 +624,27 @@ namespace FRDB_SQLite
 
             return message;
         }
-        
+
+        private String ExistsAttribute()
+        {
+            String message = "";
+            if (_selectedRelations.Count == 0 || _selectedAttributeTexts == null) return "";
+
+            foreach (var item in _selectedAttributeTexts)
+            {
+                int count = 0;
+                String attr = item.ToLower();
+                foreach (var item1 in _selectedRelations[0].Scheme.Attributes)
+                {
+                    if (item1.AttributeName.ToLower() == attr)
+                        count++;
+                }
+
+                if (count == 0)
+                    return message = "Invalid selected object name of attribute: '" + attr + "'.";
+            }
+            return message;
+        }
         #endregion
     }
 
