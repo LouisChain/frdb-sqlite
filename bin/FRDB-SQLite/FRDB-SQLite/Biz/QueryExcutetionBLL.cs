@@ -80,15 +80,17 @@ namespace FRDB_SQLite
                 this.GetSectedRelation(); if (this._error) throw new Exception(this._errorMessage);
                 this.GetSelectedAttr(); if (this._error) throw new Exception(this._errorMessage);
 
+                _errorMessage = ExistsAttribute();
+                if (ErrorMessage != "") { this.Error = true; throw new Exception(_errorMessage); }
+
+
                 if (this._queryText.Contains("where"))
                 {
                     List<Item> items = FormatCondition(this._conditionText);
                     //Check fuzzy set and object here
                     this.ErrorMessage = ExistsFuzzySet(items);
                     if (ErrorMessage != "") { this.Error = true; return result; }
-                    _errorMessage = ExistsAttribute();
-                    if (ErrorMessage != "") { this.Error = true; throw new Exception(_errorMessage); }
-
+                    
                     QueryConditionBLL condition = new QueryConditionBLL(items, this._selectedRelations);
                     result.Scheme.Attributes = this._selectedAttributes;
                     
