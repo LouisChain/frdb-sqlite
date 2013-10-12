@@ -327,7 +327,6 @@ namespace FRDB_SQLite
                     return i;
                 }
             }
-
             return -1;
         }
 
@@ -449,6 +448,12 @@ namespace FRDB_SQLite
                     result.Add(index.ToString());
                     flag = i;
                     break;
+                }
+                else
+                {
+                    _errorMessage = "Invalid object name of attribute: '" + splited[i] + "'.";
+                    _error = true;
+                    throw new Exception(_errorMessage);
                 }
             }
             
@@ -613,15 +618,11 @@ namespace FRDB_SQLite
                     count++;
             }
             if (count == 0)
-                return message = "Invalid object name attribute: '" + _selectedRelationTexts[0] + "'.";
+                return message = "Invalid object name of relation: '" + _selectedRelationTexts[0] + "'.";
 
             return message;
         }
-
-        //private void ExistsRelation()
-        //{ 
-            
-        //}
+        
         #endregion
     }
 
