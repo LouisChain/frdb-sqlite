@@ -2028,6 +2028,7 @@ namespace FRDB_SQLite.Gui
             {
                 currentQuery = FzQueryBLL.GetQueryByName(name, fdbEntity);
                 OpenQuery(name);
+                txtQuery.Focus();
             }
 
         }
