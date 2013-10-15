@@ -2761,9 +2761,9 @@ namespace FRDB_SQLite.Gui
             {
                 //Datatype has been checked above
                 Double value = Double.Parse(GridViewData.Rows[i].Cells[GridViewData.ColumnCount - 1].Value.ToString());
-                if (value > 1 || value < 0)
+                if (value > 1 || value <= 0)
                 {
-                    MessageBox.Show("The membership value at row " + (i + 1) + " must be between [0-1]");
+                    MessageBox.Show("The membership value at row " + (i + 1) + " must be between (0-1]");
                     return false;
                 }
             }
